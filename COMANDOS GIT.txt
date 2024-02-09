@@ -1,0 +1,118 @@
+git config --global user.name "Ricardo"
+git config --global user.email ricardo@ladiscusion.cl
+git config --global core.editor "code --wait"
+git config --global -e
+git config --global core.autocrlf true
+
+
+ls                      //listar carpetas
+ls -a                   //listar incluso ocultos
+pwd                    // ver directorio
+cd nombre_carpeta   	//entrar a carpeta
+cd ..
+mkdir nombre	    	//crear carpeta
+
+
+
+
+PC ->  STAGE  ->  COMMIT  ->  SERVER
+
+STAGE: al estar en stage no se refleja en repositorio, 
+es solo para ver los cambios antes del subirlos
+
+COMMIT: es para pasar los archivos de STAGE a COMMIT
+
+PUSH: es para pasar de COMMIT a SERVER
+
+
+
+
+
+git init					//iniciar repositorio
+git clone https://github.com/NoobFeder/miweb.git	//clonar un repositorio
+git clone https://github.com/libgit2/libgit2 mylibgit
+code .		    	   			 //para abrir la carpeta actual en VS Code
+git status	    	   			 //ver estado del stage y commit
+git add .	    	   			 //agregar TODO archivo a Stage... Mala practica
+git add *.txt		   			 //agregar archivos de formato especifico
+git add archivo.txt	    			//agregar UN archivo a Stage
+git add nombre1 nombre2    			 //agrega varios archivos 
+git commit -m "descripcion"
+git commit              			//abre un txt para agregar descripcio
+git rm nombreArchivo   				 //eliminar archivo sin hacer el add
+
+git restore --staged nombreArchivo  //deshacer eliminado
+git restore nombreArchivo
+
+mv archivo.txt archivo1.txt             //para mover/renombrar
+$ git add archivo1.txt archivo11.txt    //para ctualiz<r el nombre
+git mv archivo11.txt archivo1.txt       //renombrar directo 
+
+archivo ".gitignore"    //aqui va el listado de archivos para ignorar
+
+git status -s
+git diff                //para salir apretar Q
+git diff --staged         // ver las diferencias en el stage
+git log                    //ver log completo
+git log --oneline           // ver log resumido
+git branch                   //para ver en que rama estoy
+git checkout -b ramab        //iniciar una nueva rama
+git checkout main           //volver a rama principal
+
+cat archivo2.txt            //ver lo que contiene el archivo
+
+ESTAR EN RAMA main
+git merge ramab             //unir las ramas
+
+
+
+-******************************************************************************
+
+
+Quick setup — if you’ve done this kind of thing before
+
+https://github.com/NoobFeder/practica.git
+
+
+
+…or create a new repository on the command line
+
+echo "# miweb" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/NoobFeder/practica.git
+git push -u origin main
+
+
+
+
+…or push an existing repository from the command line
+
+git remote add origin https://github.com/NoobFeder/practica.git
+git branch -M main
+git push -u origin main
+
+
+
+
+…or import code from another repository
+
+You can initialize this repository with code from a Subversion, Mercurial, or TFS project.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
